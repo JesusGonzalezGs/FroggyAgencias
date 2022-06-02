@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FroggyAgencias</title>
+    <link rel="stylesheet" href="globalcss.css">
+    <link rel="stylesheet" href="carrusel.css">
+    <link rel="icon" href="source/icon.jpg" type="image/icon">
+
+</head>
+
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="welcome.html" class="icon"><img class="icon" src="source/icon.jpg" alt="icono"></a>
+            <a href="welcome.html">Inicio</a>
+            <a href="cultura.html">Cultura</a>
+            <a href="naturaleza.html">Naturaleza</a>
+            <a href="gastronomia.html">Gastronomía</a>
+            <div class="dropdown">
+              <button class="dropbtn">Otros</button>
+              <div class="dropdown-content">
+                <a href="Mapa.html" class="selected">Mapa del lugar</a>
+                <a href="informacion.html">Información sobre Orihuela</a>
+              </div>
+            </div> 
+            <a href="javascript:void(0);" style="font-size:15px;" class="desp" onclick="myFunction()">&#9776;</a>
+          </div>
+    </nav>
+    <section>
+        <h1>Mapa del lugar</h1>
+        <article>
+            <div class="principal">
+                <h2>Introduccion a Mapa</h2>
+                <p>
+                    Aquí le dejamos un mapa de la zona, recuerde que en el pie de pagina también tiene
+                    un enlace a maps.
+                </p>
+            </div>
+        </article>
+        <article>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.563671131609!2d-0.9497369999999999!3d38.08054149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd639918a0a9524f%3A0x699a8c2ae099b175!2sC.%20Oriolanos%20Ausentes%2C%204A%2C%2003300%20Orihuela%2C%20Alicante!5e0!3m2!1ses!2ses!4v1653732236919!5m2!1ses!2ses" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+
+    </section>
+    <footer>
+        <p><a href="contacto.html">Contacta con nosotros</a> | <a href="https://goo.gl/maps/sKsZW9gPHD6sC4vt7" target="_blank">Enlace a google maps</a></p>
+    </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
+
+</html>

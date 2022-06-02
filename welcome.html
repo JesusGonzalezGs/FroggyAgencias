@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FroggyAgencias</title>
+    <link rel="stylesheet" href="globalcss.css">
+    <link rel="stylesheet" href="carrusel.css">
+    <link rel="icon" href="source/icon.jpg" type="image/icon">
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="welcome.html" class=" icon"><img class="icon" src="source/icon.jpg" alt="icono"></a>
+            <a href="welcome.html" class="active">Inicio</a>
+            <a href="cultura.html">Cultura</a>
+            <a href="naturaleza.html">Naturaleza</a>
+            <a href="gastronomia.html">Gastronomía</a>
+            <div class="dropdown">
+              <button class="dropbtn">Otros</button>
+              <div class="dropdown-content">
+                <a href="Mapa.html">Mapa del lugar</a>
+                <a href="informacion.html">Información sobre Orihuela</a>
+              </div>
+            </div> 
+            <a href="javascript:void(0);" style="font-size:15px;" class="desp" onclick="myFunction()">&#9776;</a>
+          </div>
+    </nav>
+    
+   
+    <section>
+        <h1>Inicio</h1>
+
+        <article>
+
+            <div class="principal">
+                <h2>BIENVENIDO</h2>
+                <p>Bienvenido a la agencia de viajes Viajecitoo.
+                    Estas vacaciones os presentamos un maravillos viaje a
+                    el pais de mi casa, situado entre medias de un edicicio
+                    de Orihuela.
+                    En los siguientes apartados mostraremos informacion sobre la cultura,
+                    naturaleza y gastronomía de el pais de mi casa.
+                </p>
+            </div>
+            <div class="foto">
+                <ul class="slider">
+                    <li id="slide1"><img
+                            src="https://www.bing.com/th?id=OIP.QCyA6d4FJu7SLws8Zmn3OQHaJW&w=82&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                            alt=""></li>
+                    <li id="slide2"><img
+                            src="https://th.bing.com/th/id/R.26a3e8c8cd2f9100ae29cd274e26e1bc?rik=GUudrPDfDM%2f%2b3Q&pid=ImgRaw&r=0"
+                            alt=""></li>
+                    <li id="slide3"><img
+                            src="https://www.bing.com/th?id=OIP.QCyA6d4FJu7SLws8Zmn3OQHaJW&w=82&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                            alt=""></li>
+                </ul>
+
+                <div class="cambios">
+                    <ul class="menu">
+                        <li><a href="#slide1">
+                                <div class="circulo"></div>
+                            </a></li>
+                        <li><a href="#slide2">
+                                <div class="circulo"></div>
+                            </a></li>
+                        <li><a href="#slide3">
+                                <div class="circulo"></div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <footer class="footer1">
+        <p><a href="contacto.html">Contacta con nosotros</a> | <a href="https://goo.gl/maps/sKsZW9gPHD6sC4vt7" target="_blank">Enlace a google maps</a></p>
+    </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+</body>
+
+</html>
